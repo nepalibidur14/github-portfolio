@@ -18,7 +18,7 @@ const BIO = {
   title:    "Full-Stack Engineer · AI / Backend",
   location: "Tokyo, Japan (originally from Nepal)",
   tagline:  "Engineer @ Trifa Inc. · Building AI-driven systems and scalable backend infrastructure.",
-  summary:  "Full-Stack Engineer with 5+ years across Japan and Nepal — currently at Trifa Inc. building backend systems for global travel infrastructure. Previously AI Evangelist at Okicom, shipping Amazon Bedrock agents, RAG chatbots, and a Knowledge Video App with Google Speech-to-Text + Generative AI. Winner of the KOZA AI Hackathon 2025 (Jagu'e'r).",
+  summary:  "Full-Stack Engineer with 6+ years across Japan and Nepal — currently at Trifa Inc. building backend systems for global travel infrastructure. Previously AI Evangelist at Okicom, shipping Amazon Bedrock agents, RAG chatbots, and a Knowledge Video App with Google Speech-to-Text + Generative AI. Winner of the KOZA AI Hackathon 2025 (Jagu'e'r).",
 };
 
 // Skill stack, grouped.

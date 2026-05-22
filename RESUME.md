@@ -8,7 +8,7 @@
 
 ## Professional Summary
 
-Full-Stack Engineer with **5+ years of experience** developing AI-powered chat systems, LLM-based automation, and scalable enterprise applications. Skilled in **TypeScript, Node.js, React, and cloud services (AWS/GCP)**. Hands-on expertise in chatbot development, NLP, microservices, and automated testing. Passionate about building **secure, high-performance, and user-focused AI chat solutions** for large-scale platforms. Experienced in Agile team development and cross-functional collaboration, with strong problem-solving and research abilities.
+Full-Stack Engineer with **6+ years of experience** developing AI-powered chat systems, LLM-based automation, and scalable enterprise applications. Skilled in **TypeScript, Node.js, React, and cloud services (AWS/GCP)**. Hands-on expertise in chatbot development, NLP, microservices, and automated testing. Passionate about building **secure, high-performance, and user-focused AI chat solutions** for large-scale platforms. Experienced in Agile team development and cross-functional collaboration, with strong problem-solving and research abilities.
 
 ---
 
