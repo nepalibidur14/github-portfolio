@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bidur Nepali — Full-Stack Engineer</title>
+  <meta name="description" content="Bidur Nepali — Full-Stack Engineer based in Japan. Terminal-style portfolio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <main class="terminal" role="main">
+    <header class="titlebar">
+      <div class="dots">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+      </div>
+      <div class="title">guest@github — -zsh — 100x32</div>
+      <div class="spacer"></div>
+    </header>
+
+    <section class="screen" id="screen" aria-live="polite">
+      <pre class="banner" id="banner"></pre>
+      <div id="output"></div>
+
+      <form class="prompt-line" id="prompt-form" autocomplete="off">
+        <span class="prompt">
+          <span class="user">guest</span><span class="at">@</span><span class="host">github</span>
+          <span class="colon">:</span><span class="path">~</span><span class="dollar">$</span>
+        </span>
+        <input type="text" id="cmd" class="cmd-input" autofocus spellcheck="false" />
+        <span class="cursor" aria-hidden="true">▋</span>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
