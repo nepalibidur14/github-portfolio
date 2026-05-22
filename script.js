@@ -15,36 +15,61 @@ const SOCIALS = {
 // API. Leave a value as "" to fall back to GitHub.
 const BIO = {
   name:     "Bidur Nepali",
-  title:    "Full-Stack Engineer",
-  location: "Japan (originally from Nepal)",
-  tagline:  "I craft accessible, performant web applications that blend thoughtful design with robust engineering.",
-  summary:  "Full-Stack Engineer based in Japan with 6+ years building products across startups and established companies. Specializing in React, Node.js, and cloud infrastructure — with recent focus on Generative AI, RAG systems, and microservices on AWS.",
+  title:    "Full-Stack Engineer · AI / Backend",
+  location: "Okinawa, Japan (originally from Nepal)",
+  tagline:  "Engineer @ Trifa Inc. · Building AI-driven systems and scalable backend infrastructure.",
+  summary:  "Full-Stack Engineer with 5+ years across Japan and Nepal — currently at Trifa Inc. building backend systems for global travel infrastructure. Previously AI Evangelist at Okicom, shipping Amazon Bedrock agents, RAG chatbots, and a Knowledge Video App with Google Speech-to-Text + Generative AI. Winner of the KOZA AI Hackathon 2025 (Jagu'e'r).",
 };
 
 // Skill stack, grouped.
 const SKILLS = {
-  frontend:    ["React", "Next.js", "Vue.js", "TypeScript", "JavaScript", "Tailwind CSS", "HTML/CSS", "Redux", "Material UI", "Bootstrap"],
-  backend:     ["Node.js", "NestJS", "Express.js", "REST APIs", "WebSockets", "GraphQL"],
-  database:    ["PostgreSQL", "MySQL", "Elasticsearch", "MongoDB", "Redis"],
-  "cloud/devops": ["AWS (Lambda, EC2, S3, Amplify)", "GCP", "Docker", "CI/CD", "GitHub Actions", "Jenkins", "Vercel", "Bitbucket"],
-  languages:   ["English (Fluent)", "Japanese (JLPT N2)", "Nepali (Native)"],
+  "ai / llm":  ["Amazon Bedrock", "Azure OpenAI", "GCP Vertex AI", "Google Speech-to-Text", "RAG", "AI Agents", "Prompt Engineering", "Eval (quality + latency + cost)"],
+  frontend:    ["React", "Next.js", "Vue 3", "TypeScript", "JavaScript", "Tailwind CSS", "Redux", "Pinia", "Material UI", "Ant Design"],
+  backend:     ["Node.js", "NestJS", "Express.js", "REST APIs", "gRPC", "WebSockets", "GraphQL"],
+  database:    ["PostgreSQL", "MySQL", "DynamoDB", "Elasticsearch", "MongoDB", "Redis"],
+  "cloud / devops": ["AWS (Lambda, ECS, EC2, S3, Amplify, DynamoDB, ECR)", "GCP", "Docker", "GitHub Actions", "Bitbucket CI/CD", "Vercel"],
+  "testing / security": ["Cypress (E2E)", "Vitest", "Unit / Integration", "OWASP ZAP"],
+  languages:   ["English (Fluent)", "Japanese (JLPT N3)", "Nepali (Native)", "Hindi (Basic)"],
 };
 
 // Work history, newest first.
 const EXPERIENCE = [
   {
-    period:  "Jun 2023 – Present",
-    role:    "AI Evangelist / System Engineer",
+    period:  "May 2026 – Present",
+    role:    "Engineer",
+    company: "Trifa Inc., Japan",
+    bullets: [
+      "Building backend systems for global travel infrastructure (eSIM mobile connectivity, digital payments, translation, activities & experiences)",
+      "Working across services that make international travel possible with just a passport + Trifa",
+    ],
+    stack: ["TypeScript", "Node.js", "Backend"],
+  },
+  {
+    period:  "Jul 2025 – Apr 2026",
+    role:    "AI Evangelist / AI Engineer (R&D)",
     company: "Okicom Co. Ltd., Japan",
     bullets: [
-      "Led internal AI adoption — translated business needs into practical GenAI solutions (RAG chatbot, smart notifier, workflow automations)",
-      "Proposed and validated use-cases with stakeholders; created demos, guidelines, and reusable prompt/RAG templates",
-      "Designed Knowledge Video Application with Google Speech-to-Text + Generative AI (subtitles, proofreading, translation, auto-summary)",
-      "Built microservices for batch operations (EC2-based batch + AWS Amplify serverless)",
-      "Improved frontend performance/UX by ~40% through state optimization + web workers",
-      "Contributed to CI/CD pipelines (GitHub Actions, Bitbucket, Vercel)",
+      "Researched and built multiple AI agents and LLM-powered prototypes using Amazon Bedrock — practical use cases, rapid validation",
+      "Developed chatbot applications for internal/business workflows (Q&A, support automation, summarization) with attention to usability and safe outputs",
+      "Built an AI Smart Notifier to track project progress and auto-notify members of status changes, risks, and delays",
+      "Created PoCs to validate feasibility, accuracy, latency, and cost — iterated based on user feedback and measurable impact",
+      "Collaborated across Engineering and Management to translate business needs into prototypes; guided adoption via demos and documentation",
     ],
-    stack: ["AWS Amplify", "AWS Lambda", "Vue 3", "TypeScript", "Generative AI", "RAG", "Cypress"],
+    stack: ["Amazon Bedrock", "AI Agents", "RAG", "TypeScript", "Node.js", "Python"],
+  },
+  {
+    period:  "Jul 2023 – Jun 2025",
+    role:    "Programmer / System Engineer",
+    company: "Okicom Co. Ltd., Japan",
+    bullets: [
+      "Designed and shipped the Knowledge Video Application — Google Speech-to-Text + Generative AI for subtitles, proofreading, translation, and auto-summary; tuned token counts, temperature, and prompting for accuracy",
+      "Implemented microservices on AWS (EC2 batch + Amplify serverless) supporting scalable AI chat workloads",
+      "Built an internal knowledge-based chatbot for org-wide resource access",
+      "Evangelized AI adoption via internal workshops and rapid prototyping",
+      "Ensured quality via Cypress E2E, Vitest integration/unit tests, and OWASP ZAP penetration testing",
+      "Improved frontend performance + UX by ~40% via optimized state management and web workers",
+    ],
+    stack: ["AWS Amplify", "AWS Lambda", "Vue 3", "TypeScript", "Generative AI", "Cypress"],
   },
   {
     period:  "Jul 2021 – Jun 2023",
