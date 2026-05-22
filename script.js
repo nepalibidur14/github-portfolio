@@ -507,11 +507,28 @@ form.addEventListener("submit", async (e) => {
   await run(v);
 });
 
-// Click anywhere -> focus the input (real terminal feel)
+// Click anywhere -> focus the input (real terminal feel).
+// On mobile we skip auto-focus to avoid popping the keyboard unexpectedly —
+// tapping the quick-cmd buttons should "just work" without the keyboard.
+const isCoarsePointer = window.matchMedia("(pointer: coarse)").matches;
 document.addEventListener("click", (e) => {
-  if (window.getSelection().toString()) return; // don't steal focus while user is selecting
+  if (e.target.closest(".quick-cmds")) return;
+  if (window.getSelection().toString()) return;
+  if (isCoarsePointer && !e.target.closest(".prompt-line")) return;
   input.focus();
 });
+
+// Quick-command bar — tappable shortcuts for visitors on mobile
+const quickCmds = document.getElementById("quick-cmds");
+if (quickCmds) {
+  quickCmds.addEventListener("click", (e) => {
+    const btn = e.target.closest("button[data-cmd]");
+    if (!btn) return;
+    e.preventDefault();
+    btn.blur();
+    run(btn.dataset.cmd);
+  });
+}
 
 // Reposition the blinking cursor right after the typed text
 const cursor = document.querySelector(".cursor");
@@ -545,7 +562,9 @@ async function boot() {
   await run("whoami");
 
   placeCursor();
-  input.focus();
+  // Don't auto-focus on touch devices — would pop the on-screen keyboard
+  // before the visitor has even decided to interact.
+  if (!isCoarsePointer) input.focus();
 }
 
 boot().catch(err => {

@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0a0e0a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <title>Bidur Nepali — Full-Stack Engineer</title>
   <meta name="description" content="Bidur Nepali — Full-Stack Engineer based in Japan. Terminal-style portfolio." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -33,10 +36,33 @@
           <span class="user">guest</span><span class="at">@</span><span class="host">github</span>
           <span class="colon">:</span><span class="path">~</span><span class="dollar">$</span>
         </span>
-        <input type="text" id="cmd" class="cmd-input" autofocus spellcheck="false" />
+        <input
+          type="text"
+          id="cmd"
+          class="cmd-input"
+          autofocus
+          spellcheck="false"
+          autocomplete="off"
+          autocorrect="off"
+          autocapitalize="none"
+          inputmode="text"
+          enterkeyhint="send"
+          aria-label="terminal input"
+        />
         <span class="cursor" aria-hidden="true">▋</span>
       </form>
     </section>
+
+    <nav class="quick-cmds" id="quick-cmds" aria-label="quick commands">
+      <button type="button" data-cmd="about">about</button>
+      <button type="button" data-cmd="skills">skills</button>
+      <button type="button" data-cmd="experience">experience</button>
+      <button type="button" data-cmd="demos">demos</button>
+      <button type="button" data-cmd="repos">repos</button>
+      <button type="button" data-cmd="contact">contact</button>
+      <button type="button" data-cmd="help">help</button>
+      <button type="button" data-cmd="clear">clear</button>
+    </nav>
   </main>
 
   <script src="script.js"></script>
