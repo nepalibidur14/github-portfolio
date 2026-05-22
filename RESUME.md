@@ -1,6 +1,6 @@
 # BIDUR NEPALI
 
-**Okinawa, Japan** · +81 90-7587-2798
+**Tokyo, Japan** · +81 90-7587-2798
 
 [Email](mailto:bidurnepali54@gmail.com) · [LinkedIn](https://www.linkedin.com/in/bidur-nepali-7782811a2/) · [Portfolio](https://nepalibidur.com.np) · [GitHub](https://github.com/nepalibidur14) · [CLI Portfolio](https://cli.nepalibidur.com.np)
 
