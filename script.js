@@ -29,7 +29,7 @@ const SKILLS = {
   database:    ["PostgreSQL", "MySQL", "DynamoDB", "Elasticsearch", "MongoDB", "Redis"],
   "cloud / devops": ["AWS (Lambda, ECS, EC2, S3, Amplify, DynamoDB, ECR)", "GCP", "Docker", "GitHub Actions", "Bitbucket CI/CD", "Vercel"],
   "testing / security": ["Cypress (E2E)", "Vitest", "Unit / Integration", "OWASP ZAP"],
-  languages:   ["English (Fluent)", "Japanese (JLPT N3)", "Nepali (Native)", "Hindi (Basic)"],
+  languages:   ["English (Fluent)", "Japanese (JLPT N2)", "Nepali (Native)", "Hindi (Basic)"],
 };
 
 // Work history, newest first.

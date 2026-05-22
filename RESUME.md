@@ -184,7 +184,7 @@ Researched and prototyped AI-based code review and standardization tools for dev
 
 ## Languages
 
-- **Japanese** — JLPT N3 (conversational, actively improving)
+- **Japanese** — JLPT N2
 - **English** — Fluent
 - **Nepali** — Native
 - **Hindi** — Basic
