@@ -6,7 +6,7 @@ const GITHUB_USERNAME = "nepalibidur14";
 // Social / contact links. Leave a value as "" to hide it.
 const SOCIALS = {
   email:    "bidurnepali54@gmail.com",
-  linkedin: "https://www.linkedin.com/in/your-handle",   // <- edit
+  linkedin: "https://www.linkedin.com/in/bidur-nepali-7782811a2/",
   twitter:  "",                                           // e.g. "https://twitter.com/your-handle"
   website:  "https://nepalibidur.com.np",
 };
@@ -255,6 +255,12 @@ const commands = {
       : (u.blog ? `<a class="link" target="_blank" rel="noopener" href="${escapeHtml(u.blog)}">${escapeHtml(u.blog)}</a>` : "—");
 
     const info = el("div");
+    // Show a friendly /in/handle instead of the full LinkedIn URL.
+    const linkedinHandle = (SOCIALS.linkedin.match(/linkedin\.com\/(in\/[^/?#]+)/i) || [])[1];
+    const linkedinLink = SOCIALS.linkedin
+      ? `<a class="link" target="_blank" rel="noopener" href="${escapeHtml(SOCIALS.linkedin)}">linkedin.com/${escapeHtml(linkedinHandle || "")}</a>`
+      : "—";
+
     const rows = [
       ["name",     BIO.name || u.name || u.login || GITHUB_USERNAME],
       ["title",    BIO.title || "—"],
@@ -262,6 +268,7 @@ const commands = {
       ["tagline",  BIO.tagline || u.bio || "—"],
       ["website",  websiteLink],
       ["github",   `<a class="link" target="_blank" rel="noopener" href="https://github.com/${GITHUB_USERNAME}">github.com/${GITHUB_USERNAME}</a>`],
+      ["linkedin", linkedinLink],
       ["joined",   u.created_at ? fmtDate(u.created_at) : "—"],
     ];
     for (const [k, v] of rows) {
